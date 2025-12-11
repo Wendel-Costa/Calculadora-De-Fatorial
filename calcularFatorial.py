@@ -1,3 +1,5 @@
+#Padrão Singleton
+
 import time
 from abc import ABC, abstractmethod
 
@@ -21,7 +23,7 @@ class RecursiveFactorial(FactorialStrategy):
 
 
 class CalcularFatorial:
-    _instance = None  # atributo da instância única
+    _instance = None
 
     def __new__(cls):
         if cls._instance is None:
